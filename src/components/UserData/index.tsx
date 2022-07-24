@@ -28,9 +28,10 @@ export default function UserData({ user }: UserDataProps) {
 }
 
 const Container = styled.section`
+  width: 100%;
   padding: 3rem 2.4rem;
-  background: ${props => props.theme.colors.card};
- 
+  background: ${(props) => props.theme.colors.card};
+
   border-radius: 1.5rem;
   margin-top: 1.6rem;
   max-width: 73.3rem;

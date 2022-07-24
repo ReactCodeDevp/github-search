@@ -1,7 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import { createGlobalStyle } from "styled-components";
-import App from "./App";
+import App from './App'
+
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -24,10 +25,9 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <GlobalStyle />
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+  </React.StrictMode>
+)
